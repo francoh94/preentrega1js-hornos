@@ -1,18 +1,17 @@
 function Validacion(edad, ci, sueldo){
-    if ((edad) && edad > 18){
+    if ( edad > 18){
         validar = true;
         console.log(edad);}
-    if ((edad)|| edad < 18){
+    if ( edad < 18){
         validar = false;
         alert("edad no permitida");
     }
-    if ((ci) && ci > 10000000 && ci < 70000000) {
+    if ( ci > 10000000 && ci < 70000000) {
         validar = true;
         console.log(ci);}
-    if ((ci)|| ci < 10000000 || ci > 70000000) {
+    if (ci < 10000000 || ci > 70000000) {
         validar = false;
         alert("ci no admitida");
-        
     }
     if ((sueldo) || sueldo >= 10000 ){
         validar = true;
