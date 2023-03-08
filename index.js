@@ -13,11 +13,11 @@ function Validacion(edad, ci, sueldo){
         validar = false;
         alert("ci no admitida");
     }
-    if ((sueldo) || sueldo >= 10000 ){
+    if (sueldo >= 10000 ){
         validar = true;
         alert(`${nombre} con su sueldo, tiene una garantia para un alquiler de: ${sueldo / 2}`);
     }
-    if (isNaN(sueldo) || sueldo < 10000 ) {
+    if (sueldo < 10000 ) {
         validar = false;
         alert("sueldo invalido")
     }
@@ -35,4 +35,3 @@ const alquiler = parseInt(prompt("ingresa tu alquiler"))
 for(let i = 0; i <3; i++){
     alert(`año ${1 + i}: ${((alquiler) * 0.05) * i + alquiler}`);
     }
-    
