@@ -35,3 +35,4 @@ const alquiler = parseInt(prompt("ingresa tu alquiler"))
 for(let i = 0; i <3; i++){
     alert(`año ${1 + i}: ${((alquiler) * 0.05) * i + alquiler}`);
     }
+    
